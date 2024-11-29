@@ -43,7 +43,7 @@ const AboutMe = () => {
                     <span className="w-full flex justify-start text-2xl font-semibold mb-2  items-center p-2">Education 🎓
                     </span>
                     <div className="w-full flex flex-col float-left text-xl tracking-wider text-left mb-1 list-disc p-2">
-                        <span className="mb-3">Qualified class final year in Computer Science.
+                        <span className="mb-3">Final year in Computer Science.
                         {/* <div className="flex w-full mt-3 items-center">
                             <span className="text-slate-500">See Proof</span>
                             <IoIosReturnRight className="ms-2"></IoIosReturnRight>
