@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaRegCircleDot } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 import { GiSplitCross } from "react-icons/gi";
-import { MdOutlineFacebook } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Contact = () => {
@@ -15,8 +15,8 @@ const Contact = () => {
         setContactBoxVisible(!contactBoxVisible);
     }
 
-    const navigateFacebookProfile = () => {
-        window.open("https://www.facebook.com/yan.p.phyoe.75")
+    const navigateLinkedinProfile = () => {
+        window.open("https://www.linkedin.com/in/yan-paing-phyoe-9a48aa321/")
     }
 
     const navigateGitHub = () => {
@@ -86,9 +86,9 @@ const Contact = () => {
                         <GoArrowUpRight className="w-4 h-4 ms-1"></GoArrowUpRight>
                     </span>
 
-                    <span className="flex justify-start items-center border-2 p-1 rounded-md bg-white mb-1"  onClick={navigateFacebookProfile}>
-                        <MdOutlineFacebook className="w-6 h-6 ms-2 me-3 text-blue-700"></MdOutlineFacebook>
-                        <span className="border-l-2 pl-1 cursor-pointer hover:text-blue-700">Leon</span>
+                    <span className="flex justify-start items-center border-2 p-1 rounded-md bg-white mb-1"  onClick={navigateLinkedinProfile}>
+                        <FaLinkedin className="w-6 h-6 ms-2 me-3 text-blue-700"></FaLinkedin>
+                        <span className="border-l-2 pl-1 cursor-pointer hover:text-blue-700">Yan Paing (Leon) Phyoe</span>
                         <GoArrowUpRight className="w-4 h-4 ms-1"></GoArrowUpRight>
                     </span>
 

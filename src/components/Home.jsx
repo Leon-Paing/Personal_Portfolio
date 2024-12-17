@@ -5,7 +5,7 @@ import { FiMail } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { GiSplitCross } from "react-icons/gi";
-import { MdOutlineFacebook } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 import LazyLoad from "react-lazyload";
 
@@ -17,8 +17,8 @@ const Home = () => {
         setContactBoxVisible(!contactBoxVisible);
     }
 
-    const navigateFacebookProfile = () => {
-        window.open("https://www.facebook.com/yan.p.phyoe.75")
+    const navigateLinkedinProfile = () => {
+        window.open("https://www.linkedin.com/in/yan-paing-phyoe-9a48aa321/")
     }
 
     const navigateGitHub = () => {
@@ -56,12 +56,6 @@ const Home = () => {
                             <video src="/Outfit.mp4" className="w-full rounded" autoPlay loop muted></video>
                         </LazyLoad>
                     </div>
-
-                    <div className="w-5/6 flex justify-center items-center p-1 xl:mt-2">
-                        <div className="flex justify-center items-center p-1">See all projects
-                        <IoIosArrowRoundDown className="ms-1"></IoIosArrowRoundDown>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -94,9 +88,9 @@ const Home = () => {
                         <GoArrowUpRight className="w-4 h-4 ms-1"></GoArrowUpRight>
                     </span>
 
-                    <span className="flex justify-start items-center border-2 p-1 rounded-md bg-white mb-1"  onClick={navigateFacebookProfile}>
-                        <MdOutlineFacebook className="w-6 h-6 ms-2 me-3 text-blue-700"></MdOutlineFacebook>
-                        <span className="border-l-2 pl-1 cursor-pointer hover:text-blue-700">Leon</span>
+                    <span className="flex justify-start items-center border-2 p-1 rounded-md bg-white mb-1"  onClick={navigateLinkedinProfile}>
+                        <FaLinkedin className="w-6 h-6 ms-2 me-3 text-blue-700"></FaLinkedin>
+                        <span className="border-l-2 pl-1 cursor-pointer hover:text-blue-700">Yan Paing (Leon) Phyoe</span>
                         <GoArrowUpRight className="w-4 h-4 ms-1"></GoArrowUpRight>
                     </span>
 

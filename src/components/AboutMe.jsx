@@ -29,12 +29,14 @@ const AboutMe = () => {
                     <div className="w-full flex float-left text-xl xl:text-justify xs:text-left mb-2">A passionate tech enthusiast and quick learner dedicated to harnessing technology for innovative solutions.</div>
                     <div className="w-full flex float-left text-xl xl:text-justify xs:text-left mb-5">With a positive attitude and a strong work ethic, I thrive in collaborative environments, eager to contribute and grow alongside my team.</div>
                     
-                    {/* <div className="w-full text-2xl flex items-center">
+                    <div className="w-full text-2xl flex items-center">
                             <span>Download CV</span> 
                             <IoIosReturnRight className="ms-2"></IoIosReturnRight>
-                            <SiGoogleforms className="ms-2 text-2xl text-blue-700 cursor-pointer">
-                            </SiGoogleforms>
-                    </div> */}
+                            <a href="/YanPaingPhyoeCV.pdf" download="YanPaingPhyoeCV.pdf">
+                                <SiGoogleforms className="ms-2 text-2xl text-blue-700 cursor-pointer"></SiGoogleforms>
+                            </a>
+                            
+                    </div>
 
                 </div>
 
@@ -43,13 +45,8 @@ const AboutMe = () => {
                     <span className="w-full flex justify-start text-2xl font-semibold mb-2  items-center p-2">Education 🎓
                     </span>
                     <div className="w-full flex flex-col float-left text-xl tracking-wider text-left mb-1 list-disc p-2">
-                        <span className="mb-3">Final year in Computer Science.
-                        {/* <div className="flex w-full mt-3 items-center">
-                            <span className="text-slate-500">See Proof</span>
-                            <IoIosReturnRight className="ms-2"></IoIosReturnRight>
-                            <PiCertificateLight className="ms-4 text-4xl text-green-500 cursor-pointer"></PiCertificateLight>
-                        </div> */}
-                        </span>
+                        <span className="mb-3">B.Sc Computer Science </span>
+                        <span className="mb-3">Dagon University</span>
 
                         <span className="mb-3">1+ year of self-employed
                             <b className="text-blue-700 flex items-center"> React Developer.<BiLogoReact className="text-2xl ms-1"></BiLogoReact></b>
@@ -76,12 +73,14 @@ const AboutMe = () => {
 
                         <span className="mb-6 flex justify-between items-center">
                             <span className="w-1/2 flex justify-center items-center border-r-2">English 🇺🇸</span>
-                            <span className="w-1/2 flex justify-center items-center">Intermediate</span>
+                            <span className="w-1/2 flex justify-center items-center"> Intermediate (B2)</span>
                         </span>
 
                         <span className="mb-6 flex justify-between items-center">
                             <span className="w-1/2 flex justify-center items-center border-r-2">Korean 🇰🇷</span>
-                            <span className="w-1/2 flex justify-center items-center">Upper Basic</span>
+                            <span className="w-1/2 flex justify-center items-center">
+                                Intermediate
+                            </span>
                         </span>
                     </div>
                 </div>
