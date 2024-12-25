@@ -32,7 +32,7 @@ const AboutMe = () => {
                     <div className="w-full text-2xl flex items-center">
                             <span>Download CV</span> 
                             <IoIosReturnRight className="ms-2"></IoIosReturnRight>
-                            <a href="/YanPaingPhyoeCV.pdf" download="YanPaingPhyoeCV.pdf">
+                            <a href="/YanPaing_Resume.pdf" download="YanPaingPhyoeCV.pdf">
                                 <SiGoogleforms className="ms-2 text-2xl text-blue-700 cursor-pointer"></SiGoogleforms>
                             </a>
                             
