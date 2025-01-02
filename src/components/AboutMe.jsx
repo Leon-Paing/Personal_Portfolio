@@ -23,7 +23,7 @@ const AboutMe = () => {
             </div>
 
             <div className="w-full flex flex-wrap tracking-wider">
-                <div className="xl:w-2/3 xs:w-full xl:h-[270px] xs:h-[450px] flex flex-col justify-start items-center p-4 rounded-xl  mb-5 xl:shadow-md xs:shadow-2xl">
+                <div className="xl:w-2/3 xs:w-full xl:h-[270px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl  mb-5 xl:shadow-md xs:shadow-2xl">
                     <span className="w-full flex float-left text-2xl mb-3 items-center">Hello! 👋</span>
                     <span className="w-full flex float-left text-3xl mb-3  items-center">I’m Yan Paing Phyoe aka Leon 🧑🏻‍🔬 ,</span>
                     <div className="w-full flex float-left text-xl xl:text-justify xs:text-left mb-2">A passionate tech enthusiast and quick learner dedicated to harnessing technology for innovative solutions.</div>
