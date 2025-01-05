@@ -44,16 +44,16 @@ const Home = () => {
 
                 <div className="xl:w-1/2 xs:w-full h-full flex flex-col justify-start items-center text-2xl gap-3 -mt-8">
                     <LazyLoad className="w-5/6 flex justify-center items-center p-1 bg-white rounded-md border-4 border-slate-100 shadow-xl z-30" once>
-                        <video src="/Endura.mp4" className="w-full rounded" autoPlay loop muted></video>
+                        <img src="/Endura.jpeg" className="w-full rounded"></img>
                     </LazyLoad>
 
                     <div className="w-5/6 flex xl:flex-row xs:flex-col justify-between gap-3">
                         <LazyLoad className="xl:w-1/2 xs:w-full flex justify-center items-center p-1 bg-white rounded-md border-4 border-slate-100 shadow-xl z-20 hover:z-40" once>
-                            <video src="/RunThrough.mp4" className="w-full rounded" autoPlay loop muted></video>
+                            <img src="/RunThrough.jpeg" className="w-full rounded"></img>
                         </LazyLoad>
 
                         <LazyLoad className="xl:w-1/2 xs:w-full flex justify-center items-center p-1 bg-white rounded-md border-4 border-slate-100 shadow-xl z-20 hover:z-40">
-                            <video src="/Outfit.mp4" className="w-full rounded" autoPlay loop muted></video>
+                            <img src="/gonews.jpeg" className="w-full rounded"></img>
                         </LazyLoad>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const Home = () => {
 
                     <span className="flex justify-start items-center p-1 border-2 rounded-md mb-3 bg-white shadow-md shadow-gray-300">
                         <FiMail className="w-6 h-6 ms-2 me-3"></FiMail>
-                        <span className="border-l-2 pl-1">yanpaingwork.profession@gmail.com</span>
+                        <a href="mailto:yanpaingwork.profession@gmail.com" className="border-l-2 pl-1">yanpaingwork.profession@gmail.com</a>
                     </span>
 
                     <span className="flex justify-start items-center border-2 p-1 rounded-md bg-white mb-3 shadow-sm shadow-gray-300"  onClick={navigateGitHub}>

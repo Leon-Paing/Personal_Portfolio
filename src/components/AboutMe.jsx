@@ -32,7 +32,7 @@ const AboutMe = () => {
                 </div>
                 
                 {/*Education*/}
-                <div className="xl:w-1/3 xs:w-full xl:h-[270px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl shadow-2xl mb-5 tracking-wider">
+                <div className="xl:w-1/3 xs:w-full xl:h-[270px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl shadow-md mb-5 tracking-wider">
                     <span className="w-full flex justify-start text-2xl font-semibold mb-2  items-center p-2">Education 🎓
                     </span>
                     <div className="w-full flex flex-col float-left text-xl tracking-wider text-left mb-1 list-disc p-2">
@@ -51,7 +51,7 @@ const AboutMe = () => {
                 </div>
 
                 {/*Languages*/}
-                <div className="xl:w-1/3 xs:w-full xl:h-[310px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl shadow-2xl mb-5 border-0.5 border-slate-100">
+                <div className="xl:w-1/3 xs:w-full xl:h-[310px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl shadow-md mb-5 border-0.5 border-slate-100">
                     <span className="w-full flex justify-center text-2xl font-semibold mb-10 tracking-wider items-center p-2">
                         Languages 🇲🇲 🇺🇸 🇰🇷
                     </span>

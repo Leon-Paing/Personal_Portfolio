@@ -77,7 +77,7 @@ const Contact = () => {
 
                     <span className="flex justify-start items-center p-1 border-2 rounded-md mb-3 bg-white shadow-md shadow-gray-300">
                         <FiMail className="w-6 h-6 ms-2 me-3"></FiMail>
-                        <span className="border-l-2 pl-1">yanpaingwork.profession@gmail.com</span>
+                        <a href="mailto:yanpaingwork.profession@gmail.com" className="border-l-2 pl-1">yanpaingwork.profession@gmail.com</a>
                     </span>
 
                     <span className="flex justify-start items-center border-2 p-1 rounded-md bg-white mb-3 shadow-sm shadow-gray-300"  onClick={navigateGitHub}>

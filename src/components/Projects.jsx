@@ -6,11 +6,8 @@ import { SiFramer } from "react-icons/si";
 import { TbBrandVercel } from "react-icons/tb";
 import { PiArrowSquareInFill } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
-import { SiDjango } from "react-icons/si";
-import { SiSqlite } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { SiJupyter } from "react-icons/si";
 import { SiVite } from "react-icons/si";
+
 
 const Projects = () => {
 
@@ -22,8 +19,12 @@ const Projects = () => {
         window.open("https://github.com/Leon-Paing/Endura-Drive");
     }
 
-    const navigateToTodayOutfitRepo = () => {
-        window.open("https://github.com/Leon-Paing/Today_Outfit");
+    const navigateToGoNews = () => {
+        window.open("https://go-news-lemon.vercel.app/");
+    }
+
+    const navigateToGoNewsRepo = () => {
+        window.open("https://github.com/Leon-Paing/go_news");
     }
 
     const navigateToRunThroughShoes = () => {
@@ -80,24 +81,28 @@ const Projects = () => {
 
                     <div className="w-full p-2 flex xl:flex-row xs:flex-col text-2xl">
                         <div className="xl:w-1/2 xs:w-full flex justify-center items-center p-1">
-                            <video src="/todayoutfitProject.mp4" className="w-full rounded" autoPlay loop muted></video>
+                            <video src="/gonewsproject.mp4" className="w-full rounded" autoPlay loop muted></video>
                         </div>
                         <div className="xl:w-1/2 xs:w-full flex flex-col justify-center items-center">
-                            <span className="w-full flex float-start text-3xl font-pacifico mb-3 p-1 border-l-4">Today's Outfit</span>
+                            <span className="w-full flex float-start text-3xl font-pacifico mb-3 p-1 border-l-4">GoNews</span>
                             <div>
-                                Built with Django, this project is a content-based filtering system that recommends outfits, providing personalized fashion experience tailored to user preferences.
+                                Built with React, this project is a news webite with API integration providing news article for selected category.
                             </div>
                             <div className="w-full flex justify-start items-center mt-3 mb-4 text-xl">
                                 Developed using :
                             </div>
                             <div className="w-full flex justify-start items-center text-3xl">
-                                <SiDjango className=" text-green-700 me-3"></SiDjango>
-                                <SiSqlite className="text-sky-400 me-3"></SiSqlite>
-                                <FaPython className="me-3"></FaPython>
-                                <SiJupyter className="text-orange-700"></SiJupyter>
+                                <FaReact className=" text-sky-400 me-3"></FaReact>
+                                <SiVite className="me-3 text-yellow-500"></SiVite>
+                                <RiTailwindCssFill className="text-sky-400 me-3"></RiTailwindCssFill>
+                                <TbBrandVercel></TbBrandVercel>
                             </div>
                             <div className="w-full flex justify-start items-center mt-3 ">
-                                <div className="flex justify-center items-center text-lg border-2 p-2 rounded-lg cursor-pointer" onClick={navigateToTodayOutfitRepo}>
+                                <div className="flex justify-center items-center text-lg border-2 p-2 rounded-lg cursor-pointer" onClick={navigateToGoNews}>
+                                    <span>Live Demo</span>
+                                    <PiArrowSquareInFill className="ms-2 text-2xl"></PiArrowSquareInFill>
+                                </div>
+                                <div className="flex justify-center items-center text-lg border-2 p-2 rounded-lg cursor-pointer" onClick={navigateToGoNewsRepo}>
                                     <span>GitHub Repo</span>
                                     <FaGithub className="ms-2 text-2xl"></FaGithub>
                                 </div>
