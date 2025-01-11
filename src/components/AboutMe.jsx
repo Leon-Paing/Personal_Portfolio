@@ -30,7 +30,7 @@ const AboutMe = () => {
                     <div className="w-full flex float-left text-xl xl:text-justify xs:text-left mb-5">With a positive attitude and a strong work ethic, I thrive in collaborative environments, eager to contribute and grow alongside my team.</div>
                     <p className="w-full flex text-xl items-center">Download Resume 
                         <IoIosReturnRight className="w-10 text-3xl"></IoIosReturnRight> 
-                        <a href="./YanPaingPhyoe_Resume(FE).pdf" download="YanPaingPhyoe_Resume(FE)"><SiGoogleforms className="w-10 text-3xl text-blue-500"></SiGoogleforms></a> 
+                        <a href="./YanPaingPhyoe_Resume.pdf" download="YanPaingPhyoe_Resume"><SiGoogleforms className="w-10 text-3xl text-blue-500"></SiGoogleforms></a> 
                     </p>
 
                 </div>
