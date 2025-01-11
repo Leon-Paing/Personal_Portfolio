@@ -23,20 +23,25 @@ const AboutMe = () => {
             </div>
 
             <div className="w-full flex flex-wrap tracking-wider">
-                <div className="xl:w-2/3 xs:w-full xl:h-[270px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl  mb-5 xl:shadow-md xs:shadow-2xl">
+                <div className="xl:w-2/3 xs:w-full xl:h-[300px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl  mb-5 xl:shadow-md xs:shadow-2xl">
                     <span className="w-full flex float-left text-2xl mb-3 items-center">Hello! 👋</span>
                     <span className="w-full flex float-left text-3xl mb-3  items-center">I’m Yan Paing Phyoe aka Leon 🧑🏻‍🔬 ,</span>
                     <div className="w-full flex float-left text-xl xl:text-justify xs:text-left mb-2">A passionate tech enthusiast and quick learner dedicated to harnessing technology for innovative solutions.</div>
                     <div className="w-full flex float-left text-xl xl:text-justify xs:text-left mb-5">With a positive attitude and a strong work ethic, I thrive in collaborative environments, eager to contribute and grow alongside my team.</div>
+                    <p className="w-full flex text-xl items-center">Download Resume 
+                        <IoIosReturnRight className="w-10 text-3xl"></IoIosReturnRight> 
+                        <a href="./YanPaingPhyoe_Resume(FE).pdf" download="YanPaingPhyoe_Resume(FE)"><SiGoogleforms className="w-10 text-3xl text-blue-500"></SiGoogleforms></a> 
+                    </p>
 
                 </div>
                 
                 {/*Education*/}
-                <div className="xl:w-1/3 xs:w-full xl:h-[270px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl shadow-md mb-5 tracking-wider">
+                <div className="xl:w-1/3 xs:w-full xl:h-[300px] xs:h-auto flex flex-col justify-start items-center p-4 rounded-xl shadow-md mb-5 tracking-wider">
                     <span className="w-full flex justify-start text-2xl font-semibold mb-2  items-center p-2">Education 🎓
                     </span>
                     <div className="w-full flex flex-col float-left text-xl tracking-wider text-left mb-1 list-disc p-2">
-                        <div className="mb-3">B.Sc Computer Science </div>
+                        <div className="mb-3">B.Sc Computer Science. </div>
+                        <div className="mb-3">Certificate of Professional Web Developer from Fairway Technology. </div>
 
                         <span className="mb-3">1+ year of self-employed
                             <b className="text-blue-700 flex items-center"> React Developer.<BiLogoReact className="text-2xl ms-1"></BiLogoReact></b>

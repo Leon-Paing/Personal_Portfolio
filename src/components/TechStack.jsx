@@ -25,6 +25,17 @@ import { SiFramework } from "react-icons/si";
 import { FaTools } from "react-icons/fa";
 import { TbBrandVercel } from "react-icons/tb";
 import { SiVite } from "react-icons/si";
+import { motion } from "framer-motion";
+
+const CarousalItem = ({icon, status}) => (
+    <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
+        {icon}
+        <span className="flex justify-center items-center text-base h-1/3">
+            Status:
+            {status}
+        </span>
+    </span>
+);
 
 const TechStack = () => {
 
@@ -98,70 +109,29 @@ const TechStack = () => {
                             <SiFramework className="ms-2 text-sky-400"></SiFramework>
                             </span>
 
-                            <div className="w-full h-auto flex justify-start items-center p-3 text-2xl overflow-x-scroll overflow-y-hidden">
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <BiLogoReact className="text-5xl text-sky-500 h-2/3"></BiLogoReact>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-red-600 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <RiTailwindCssFill className="text-5xl text-sky-400 h-2/3 flex justify-center items-center"></RiTailwindCssFill>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-red-600 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <FaBootstrap className="text-5xl text-[#7952B3] h-2/3"></FaBootstrap>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-yellow-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiFramer className="text-5xl h-2/3"></SiFramer>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-yellow-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiDjango className="text-5xl text-green-700 h-2/3"></SiDjango>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiPandas className="text-5xl h-2/3"></SiPandas>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiNumpy className="text-5xl text-[#4F7DB3] h-2/3"></SiNumpy>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiScikitlearn className="text-5xl text-[#F7931E] h-2/3"></SiScikitlearn>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>   
+                            <div className="w-full h-auto flex justify-start items-center p-3 text-2xl overflow-hidden">
+                                <motion.div
+                                className="flex gap-8"
+                                animate={{ x: ["-100%", "0%"] }}
+                                transition={{
+                                duration: 500,
+                                ease: "linear",
+                                repeat: Infinity,
+                                }}
+                            >
+                                {[...Array(40)].map((_, idx) => (
+                                <div key={idx} className="flex gap-8">
+                                    <CarousalItem icon={<BiLogoReact className="text-5xl text-sky-500 h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-red-600 text-2xl"/>} />
+                                    <CarousalItem icon={<RiTailwindCssFill className="text-5xl text-sky-400 h-2/3 flex justify-center items-center"/>} status={<GiMoebiusTriangle className="ms-2 text-red-600 text-2xl"/>} />
+                                    <CarousalItem icon={<FaBootstrap className="text-5xl text-[#7952B3] h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-yellow-500 text-2xl"/>} />
+                                    <CarousalItem icon={<SiFramer className="text-5xl h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-yellow-500 text-2xl"/>} />
+                                    <CarousalItem icon={<SiDjango className="text-5xl text-green-700 h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />                                
+                                    <CarousalItem icon={<SiPandas className="text-5xl h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
+                                    <CarousalItem icon={<SiNumpy className="text-5xl text-[#4F7DB3] h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
+                                    <CarousalItem icon={<SiScikitlearn className="text-5xl text-[#F7931E] h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
+                                </div>
+                                ))}
+                            </motion.div>
                             </div>
                         </div>  
 
@@ -171,65 +141,29 @@ const TechStack = () => {
                             <FaTools className="ms-2 "></FaTools>
                             </span>
 
-                            <div className="w-full h-auto flex xl:justify-center xs:justify-start items-center p-3 text-2xl xl:overflow-hidden xs:overflow-x-auto xs:overflow-y-hidden">
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <VscVscode className="text-5xl text-[#007ACC] h-2/3"></VscVscode>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-red-600 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <IoGitMergeOutline className="text-5xl text-[#F05033] h-2/3"></IoGitMergeOutline>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <FaGithub className="text-5xl h-2/3"></FaGithub>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiJupyter className="text-5xl text-[#F37626] h-2/3"></SiJupyter>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiCanva className="text-5xl text-[#00C4CC] h-2/3"></SiCanva>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <TbBrandVercel className="text-5xl h-2/3"></TbBrandVercel>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
-                                <span className="h-28 flex flex-col justify-center items-center gap-4 border-r-2 p-2">
-                                    <SiVite className="text-5xl text-yellow-500 h-2/3"></SiVite>
-                                    <span className="flex justify-center items-center text-base h-1/3">
-                                        Status:
-                                        <GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"></GiMoebiusTriangle>
-                                    </span>
-                                </span>
-
+                    <div className="w-full overflow-hidden h-28 flex items-center">
+                        <motion.div
+                            className="flex gap-8"
+                            animate={{ x: ["0%", "-100%"] }}
+                            transition={{
+                            duration: 420,
+                            ease: "linear",
+                            repeat: Infinity,
+                            }}
+                        >
+                            {[...Array(40)].map((_, idx) => (
+                            <div key={idx} className="flex gap-8">
+                                <CarousalItem icon={<VscVscode className="text-5xl text-[#007ACC] h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-red-600 text-2xl"/>} />
+                                <CarousalItem icon={<IoGitMergeOutline className="text-5xl text-[#F05033] h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
+                                <CarousalItem icon={ <FaGithub className="text-5xl h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
+                                <CarousalItem icon={<SiJupyter className="text-5xl text-[#F37626] h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
+                                <CarousalItem icon={<SiCanva className="text-5xl text-[#00C4CC] h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />                                
+                                <CarousalItem icon={<TbBrandVercel className="text-5xl h-2/3"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
+                                <CarousalItem icon={<SiVite className="text-5xl text-yellow-500"/>} status={<GiMoebiusTriangle className="ms-2 text-blue-500 text-2xl"/>} />
                             </div>
+                            ))}
+                        </motion.div>
+                        </div>
                             
                         </div> 
                     </div>
@@ -239,5 +173,6 @@ const TechStack = () => {
         </>
     )
 }
+
 
 export default TechStack;
