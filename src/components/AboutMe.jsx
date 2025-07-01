@@ -43,8 +43,8 @@ const AboutMe = () => {
                         <div className="mb-3">B.Sc Computer Science. </div>
                         <div className="mb-3">Certificate of Professional Web Developer from Fairway Technology. </div>
 
-                        <span className="mb-3">1+ year of self-employed
-                            <b className="text-blue-700 flex items-center"> React Developer.<BiLogoReact className="text-2xl ms-1"></BiLogoReact></b>
+                        <span className="mb-3">2+ year as
+                            <b className="text-blue-700 flex items-center"> Frontend Developer.<BiLogoReact className="text-2xl ms-1"></BiLogoReact></b>
                             
                         </span>
 
